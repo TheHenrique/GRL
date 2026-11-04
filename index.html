@@ -1,12 +1,235 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GRL | Marketing Audiovisual & Mídia Social Premium</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRL | Criação de sites feitos do zero</title>
+  <meta name="description" content="A GRL cria sites rápidos e sob medida para pequenas empresas, escritórios, clínicas e restaurantes. Escritos à mão, sem template.">
+  <meta property="og:title" content="GRL | Criação de sites feitos do zero">
+  <meta property="og:description" content="Sites rápidos e sob medida, escritos à mão, sem template.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2B3CF0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="#" aria-label="GRL, início">GRL</a>
+      <nav class="menu" aria-label="Principal">
+        <button class="menu__botao" aria-expanded="false" aria-controls="menu-lista">Menu</button>
+        <ul id="menu-lista" class="menu__lista">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </nav>
+      <a class="botao botao--pequeno" href="https://wa.me/5586999212786?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__texto">
+          <h1>Sites feitos do zero. Linha por linha.</h1>
+          <p class="hero__sub">A GRL cria sites rápidos e sob medida para pequenas empresas, escritórios, clínicas e restaurantes. Escritos à mão, sem template e sem construtor pronto.</p>
+          <div class="hero__acoes">
+            <a class="botao" href="https://wa.me/5586999212786?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+            <a class="botao botao--linha" href="#projetos">Ver projetos</a>
+          </div>
+        </div>
+
+        <figure class="obra" aria-label="Ilustração de um site sendo montado, do esboço à versão final">
+          <div class="obra__janela">
+            <div class="obra__barra" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <em class="obra__endereco">cafeipe.com.br</em>
+            </div>
+            <div class="obra__pagina" aria-hidden="true">
+              <div class="bloco bloco--nav"><b>Café Ipê</b><i></i><i></i><i></i></div>
+              <div class="bloco bloco--titulo"><b>Café coado na hora, no centro da cidade.</b><small>h1 · 48px</small></div>
+              <div class="bloco bloco--texto"><b></b><b></b><small>p · 18px</small></div>
+              <div class="bloco bloco--botao"><b>Ver cardápio</b><small>botão</small></div>
+              <div class="bloco bloco--foto"><b></b><small>imagem 16:9</small></div>
+            </div>
+          </div>
+          <figcaption class="obra__status"><span class="obra__ponto"></span><span class="obra__legenda">Esboço</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="secao" id="servicos">
+      <div class="secao__inner">
+        <h2>O que a GRL faz</h2>
+        <p class="secao__intro">Cada site começa numa conversa sobre o seu negócio e termina no ar, funcionando no celular e no computador.</p>
+        <ul class="servicos">
+          <li class="servico">
+            <h3>Site institucional</h3>
+            <p>Apresenta sua empresa, seus serviços e como falar com você. Ideal para escritórios, clínicas e prestadores de serviço.</p>
+          </li>
+          <li class="servico">
+            <h3>Landing page</h3>
+            <p>Uma página focada em um único objetivo: vender um produto, divulgar um evento ou captar contatos.</p>
+          </li>
+          <li class="servico">
+            <h3>Sistema web simples</h3>
+            <p>Cadastros, controles e painéis sob medida para organizar tarefas do dia a dia da empresa.</p>
+          </li>
+          <li class="servico">
+            <h3>Ajustes e manutenção</h3>
+            <p>Atualização de textos, fotos e seções, correções e melhorias em sites que já existem.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- POR QUE DO ZERO -->
+    <section class="secao secao--azul">
+      <div class="secao__inner comparativo">
+        <h2>Por que fazer do zero?</h2>
+        <div class="comparativo__colunas">
+          <div class="comparativo__col comparativo__col--apagada">
+            <h3>Site de template</h3>
+            <ul>
+              <li>Visual parecido com o de muitos outros sites</li>
+              <li>Carrega recursos que a página nem usa</li>
+              <li>Mudanças ficam presas ao que o modelo permite</li>
+            </ul>
+          </div>
+          <div class="comparativo__col">
+            <h3>Site da GRL</h3>
+            <ul>
+              <li>Visual pensado para a sua marca</li>
+              <li>Só o código necessário, então carrega rápido</li>
+              <li>Estrutura organizada para o Google entender sua página</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="secao" id="projetos">
+      <div class="secao__inner">
+        <h2>Projetos</h2>
+        <div class="projetos">
+          <article class="projeto">
+            <a class="projeto__previa" href="https://teste-projeto-zeta.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir o site da consultoria empresarial">
+              <div class="previa-mc" aria-hidden="true">
+                <div class="previa-mc__nav"><b>Consultoria</b><i></i></div>
+                <div class="previa-mc__corpo">
+                  <div>
+                    <p class="previa-mc__h">Transforme gargalos em <span>crescimento escalável</span>.</p>
+                    <span class="previa-mc__btn"></span>
+                  </div>
+                  <div class="previa-mc__painel"><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </a>
+            <div class="projeto__info">
+              <h3>Consultoria empresarial</h3>
+              <p>Site de consultoria empresarial com painel animado, apresentação de serviços, metodologia e formulário de aplicação.</p>
+              <p class="projeto__tipo">Proposta de site · Site institucional</p>
+              <a class="link" href="https://teste-projeto-zeta.vercel.app/" target="_blank" rel="noopener">Ver site no ar</a>
+            </div>
+          </article>
+
+          <article class="projeto projeto--vago">
+            <div class="projeto__vago">
+              <h3>O próximo pode ser o seu</h3>
+              <p>Conte o que você precisa e receba uma proposta sem compromisso.</p>
+              <a class="botao botao--linha" href="https://wa.me/5586999212786?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="secao secao--grade" id="como-funciona">
+      <div class="secao__inner">
+        <h2>Como funciona</h2>
+        <ol class="etapas">
+          <li>
+            <h3>Conversa</h3>
+            <p>Você conta sobre o negócio, o público e o que espera do site.</p>
+          </li>
+          <li>
+            <h3>Proposta</h3>
+            <p>Você recebe o escopo, o valor e o prazo antes de qualquer trabalho começar.</p>
+          </li>
+          <li>
+            <h3>Layout e desenvolvimento</h3>
+            <p>O site é desenhado e programado, com espaço para seus ajustes no caminho.</p>
+          </li>
+          <li>
+            <h3>Publicação</h3>
+            <p>O site vai ao ar no seu domínio, testado no celular e no computador.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section class="secao" id="duvidas">
+      <div class="secao__inner secao__inner--estreito">
+        <h2>Dúvidas frequentes</h2>
+        <div class="faq">
+          <details>
+            <summary>Quanto custa um site?</summary>
+            <p>Depende do tamanho e das funções do site. Você recebe uma proposta com valor fechado depois da primeira conversa, sem compromisso.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo leva?</summary>
+            <p>O prazo varia conforme o projeto e é informado na proposta, antes de começar.</p>
+          </details>
+          <details>
+            <summary>O que eu preciso enviar?</summary>
+            <p>Logo, fotos e as informações da empresa. Se você ainda não tem os textos prontos, a GRL ajuda a organizar o conteúdo.</p>
+          </details>
+          <details>
+            <summary>Preciso ter domínio e hospedagem?</summary>
+            <p>Não precisa ter antes de começar. A GRL orienta o registro do domínio e a publicação do site.</p>
+          </details>
+          <details>
+            <summary>O site funciona no celular?</summary>
+            <p>Sim. Todo site é feito para se adaptar a celulares, tablets e computadores.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+      <div class="secao__inner">
+        <h2>Vamos tirar seu site do papel?</h2>
+        <p>Mande uma mensagem com o que você precisa. A resposta vem com os próximos passos.</p>
+        <div class="contato__acoes">
+          <a class="botao botao--claro" href="https://wa.me/5586999212786?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+          <a class="botao botao--linha-clara" href="mailto:henriquemelolustosa@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20or%C3%A7amento%20-%20Site&body=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site.%0A%0A">Enviar e-mail</a>
+        </div>
+        <p class="contato__email">henriquemelolustosa@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__inner">
+      <span class="marca marca--rodape">GRL</span>
+      <a href="https://www.instagram.com/somosgrl/" target="_blank" rel="noopener">Instagram @somosgrl</a>
+      <span>© <span id="ano">2026</span> GRL</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
