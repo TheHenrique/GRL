@@ -390,28 +390,33 @@ a { color: inherit; }
    As medidas em "cqi" acompanham a largura do card.
    ========================================================= */
 
-/* Consultoria */
-.previa-mc {
-  background: radial-gradient(circle at 75% 40%, #5B1E9E 0%, #1A0B2E 55%, #10071C 100%);
-  color: #FFFFFF; padding: 4cqi 5cqi;
-  display: flex; flex-direction: column; font-family: var(--fonte-titulo);
+/* Bolha & Bigode */
+.previa-bb { background: #7FE3E0; color: #1E1B3A; display: flex; flex-direction: column; }
+.previa-bb__nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 2.4cqi 5cqi; background: #F3F0FF; border-bottom: .5cqi solid #1E1B3A;
+  font-family: var(--fonte-titulo); font-weight: 800; font-size: 2.6cqi;
 }
-.previa-mc__nav { display: flex; justify-content: space-between; align-items: center; font-size: 2.6cqi; font-weight: 800; }
-.previa-mc__nav i { width: 20%; height: 3.2cqi; border-radius: 1cqi; background: #9333EA; }
-.previa-mc__corpo { flex: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 5cqi; align-items: center; }
-.previa-mc__h { font-weight: 800; font-size: 4.4cqi; line-height: 1.1; }
-.previa-mc__h span { color: #C084FC; }
-.previa-mc__btn { display: block; margin-top: 4cqi; width: 50%; height: 3.6cqi; border-radius: 1cqi; background: #9333EA; }
-.previa-mc__painel {
-  height: 72%; border: 1px solid rgba(255,255,255,.2); border-radius: 2cqi;
-  background: rgba(147, 51, 234, .18);
-  display: flex; align-items: flex-end; gap: 2.4cqi; padding: 3.5cqi;
+.previa-bb__nav b { display: flex; align-items: center; gap: 1.4cqi; }
+.previa-bb__nav b i { width: 3.6cqi; height: 3.6cqi; border-radius: 50%; background: #7FE3E0; border: .4cqi solid #1E1B3A; }
+.previa-bb__nav span { width: 13cqi; height: 3.8cqi; border-radius: 1cqi; background: #FF5A3C; border: .4cqi solid #1E1B3A; box-shadow: .5cqi .5cqi 0 #1E1B3A; }
+.previa-bb__corpo { flex: 1; display: grid; grid-template-columns: 1.15fr 1fr; gap: 4cqi; align-items: center; padding: 0 5cqi; }
+.previa-bb__h { font-family: var(--fonte-titulo); font-weight: 800; font-size: 5cqi; line-height: 1.02; letter-spacing: -0.02em; }
+.previa-bb__btn { display: block; margin-top: 3.5cqi; width: 46%; height: 4.6cqi; border-radius: 1.2cqi; background: #FF5A3C; border: .4cqi solid #1E1B3A; box-shadow: .6cqi .6cqi 0 #1E1B3A; }
+.previa-bb__ficha {
+  background: #FFFFFF; border: .5cqi solid #1E1B3A; border-radius: 2.6cqi; box-shadow: 1.2cqi 1.2cqi 0 #1E1B3A;
+  padding: 2.6cqi; display: grid; gap: 1.6cqi; transform: rotate(2deg);
 }
-.previa-mc__painel i { flex: 1; border-radius: .6cqi .6cqi 0 0; background: linear-gradient(180deg, #E879F9, #9333EA); }
-.previa-mc__painel i:nth-child(1) { height: 28%; }
-.previa-mc__painel i:nth-child(2) { height: 46%; }
-.previa-mc__painel i:nth-child(3) { height: 68%; }
-.previa-mc__painel i:nth-child(4) { height: 94%; }
+.previa-bb__pet { font-family: var(--fonte-titulo); font-weight: 800; font-size: 3.4cqi; padding-bottom: 1.4cqi; border-bottom: .35cqi dashed #1E1B3A; }
+.previa-bb__ficha i { display: block; height: 1.4cqi; border-radius: 99px; background: #DCD6F5; }
+.previa-bb__ficha i:nth-of-type(2) { width: 70%; }
+.previa-bb__ficha i:nth-of-type(3) { width: 85%; }
+.previa-bb__total {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding-top: 1.4cqi; border-top: .35cqi dashed #1E1B3A;
+  font-family: var(--fonte-titulo); font-weight: 800; font-size: 4.2cqi;
+}
+.previa-bb__total small { font-family: var(--fonte-texto); font-weight: 600; font-size: 2cqi; }
 
 /* Varanda Amarela */
 .previa-va { background: #F3C13A; color: #2A1A12; display: flex; flex-direction: column; }
